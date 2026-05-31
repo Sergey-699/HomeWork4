@@ -57,5 +57,23 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + childAge + " ,то ему можно кататься на аттракционе без сопровождении взрослого");
         }
 
+        System.out.println("Задание 6");
+        int occupiedPlaces = 101;
+        System.out.println("Занято мест " + occupiedPlaces);
+        int allPlases = 102;
+        System.out.println("Вагон расситан на " + allPlases + " мест");
+        int sittingPlaces = 60;
+        System.out.println("Сидячих мест в вагоне рассчитано на " + sittingPlaces + " человек");
+        int standingPlaces = allPlases - sittingPlaces;
+        System.out.println("Стоячих мест в вагоне рассчитано на " + standingPlaces + " человека");
+        if (occupiedPlaces <= 60) {
+            System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - occupiedPlaces) + " и " + standingPlaces + " свободных стоячих мест");
+        }
+        if (occupiedPlaces > 60 && occupiedPlaces< 102) {
+            System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - 60) + " и " + (standingPlaces - (occupiedPlaces - 60) + " свободных стоячих мест"));
+        } else {
+            System.out.println("Вагон полностью забит");
+        }
+
     }
 }
