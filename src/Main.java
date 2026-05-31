@@ -29,5 +29,21 @@ public class Main {
             System.out.println("Если скорость " + speed + " км/ч,то придется заплатить штраф");
         }
 
+        System.out.println("Задание 4");
+
+        int humanAge = 46;
+        if (humanAge >=2 && humanAge<=6){
+            System.out.println("Если возраст человека равен " + humanAge + " ,то ему нужно ходить в детский сад");
+        }
+        if(humanAge >=7 && humanAge<=17){
+            System.out.println("Если возраст человека равен " + humanAge + " ,то ему нужно ходить в школу");
+        }
+        if(humanAge >=18 && humanAge<=24){
+            System.out.println("Если возраст человека равен " + humanAge + " ,то ему нужно ходить в университет");
+        }
+        if (humanAge>24){
+            System.out.println("Если возраст человека равен " + humanAge + " ,то ему нужно ходить на работу");
+        }
+
     }
 }
