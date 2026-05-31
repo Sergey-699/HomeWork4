@@ -5,6 +5,7 @@ public class Main {
 
         System.out.println("Задание 1");
         int age = 15;
+        System.out.println("Возраст человека " + age + " лет");
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " лет,то он совершеннолетний");
         }
@@ -14,6 +15,7 @@ public class Main {
 
         System.out.println("Задание 2");
         int airTemperature = 6;
+        System.out.println("Температура воздуха на улице " + airTemperature + " градусов");
         if (airTemperature <= 5) {
             System.out.println("На улице холодно,нужно надеть шапку");
         }
@@ -23,6 +25,7 @@ public class Main {
 
         System.out.println("Задание 3");
         int speed = 75;
+        System.out.println("Скорость транспортного средства " + speed + " км/ч");
         if (speed <= 60) {
             System.out.println("Если скорость " + speed + " км/ч,то можно ездить спокойно");
         } else {
@@ -30,8 +33,8 @@ public class Main {
         }
 
         System.out.println("Задание 4");
-
         int humanAge = 46;
+        System.out.println("Возраст человека " + humanAge + " лет/года");
         if (humanAge >= 2 && humanAge <= 6) {
             System.out.println("Если возраст человека равен " + humanAge + " ,то ему нужно ходить в детский сад");
         }
@@ -47,6 +50,7 @@ public class Main {
 
         System.out.println("Задание 5");
         int childAge = 12;
+        System.out.println("Возраст ребенка " + childAge + " лет/года");
         if (childAge < 5) {
             System.out.println("Если возраст ребенка равен " + childAge + " ,то ему нельзя кататься на аттракционе ");
         }
@@ -77,8 +81,11 @@ public class Main {
 
         System.out.println("Задание 7");
         int one = 15;
+        System.out.println("Первое число " + one);
         int two = 8;
+        System.out.println("Второе число " + two);
         int three = 98;
+        System.out.println("Третье число " + three);
         int max;
         if (one >= two && one >= three) {
             max = one;
@@ -87,7 +94,7 @@ public class Main {
         } else {
             max = three;
         }
-        System.out.println("Cамое большее число " + max);
+        System.out.println("Большее число из известных " + max);
 
     }
 }
