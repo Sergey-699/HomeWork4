@@ -69,11 +69,25 @@ public class Main {
         if (occupiedPlaces <= 60) {
             System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - occupiedPlaces) + " и " + standingPlaces + " свободных стоячих мест");
         }
-        if (occupiedPlaces > 60 && occupiedPlaces< 102) {
+        if (occupiedPlaces > 60 && occupiedPlaces < 102) {
             System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - 60) + " и " + (standingPlaces - (occupiedPlaces - 60) + " свободных стоячих мест"));
         } else {
             System.out.println("Вагон полностью забит");
         }
+
+        System.out.println("Задание 7");
+        int one = 15;
+        int two = 8;
+        int three = 98;
+        int max;
+        if (one >= two && one >= three) {
+            max = one;
+        } else if (two >= one && two >= three) {
+            max = two;
+        } else {
+            max = three;
+        }
+        System.out.println("Cамое большее число " + max);
 
     }
 }
