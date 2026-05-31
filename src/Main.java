@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задание 1");
-        int age = 12;
+        int age = 18;
         System.out.println("Возраст человека " + age + " лет");
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " лет,то он совершеннолетний");
@@ -13,9 +13,9 @@ public class Main {
         }
 
         System.out.println("Задание 2");
-        int airTemperature = 6;
+        int airTemperature = 4;
         System.out.println("Температура воздуха на улице " + airTemperature + " градусов");
-        if (airTemperature <= 5) {
+        if (airTemperature < 5) {
             System.out.println("На улице холодно,нужно надеть шапку");
         } else {
             System.out.println("Сегодня тепло,можно идти без шапки");
@@ -66,9 +66,9 @@ public class Main {
         System.out.println("Сидячих мест в вагоне рассчитано на " + sittingPlaces + " человек");
         int standingPlaces = allPlases - sittingPlaces;
         System.out.println("Стоячих мест в вагоне рассчитано на " + standingPlaces + " человека");
-        int occupiedSeats = 23;
+        int occupiedSeats = 12;
         System.out.println("Занятые сидячие места " + occupiedSeats);
-        int occupiedStanding = 23;
+        int occupiedStanding = 42;
         System.out.println("Занятые стоячие места " + occupiedStanding);
         int occupiedPlaces = occupiedSeats + occupiedStanding;
         System.out.println("Всего занято мест в вагоне " + occupiedPlaces);
@@ -79,26 +79,26 @@ public class Main {
             } else if (occupiedStanding < standingPlaces) {
                 System.out.println("В вагоне есть стоячие места");
             }
-        }else {
+        } else {
             System.out.println("Вагон полностью забит");
         }
 
-            System.out.println("Задание 7");
-            int one = 15;
-            System.out.println("Первое число " + one);
-            int two = 8;
-            System.out.println("Второе число " + two);
-            int three = 98;
-            System.out.println("Третье число " + three);
-            int max;
-            if (one >= two && one >= three) {
-                max = one;
-            } else if (two >= one && two >= three) {
-                max = two;
-            } else {
-                max = three;
-            }
-            System.out.println("Большее число из известных " + max);
-
+        System.out.println("Задание 7");
+        int one = 15;
+        System.out.println("Первое число " + one);
+        int two = 8;
+        System.out.println("Второе число " + two);
+        int three = 98;
+        System.out.println("Третье число " + three);
+        int max;
+        if (one >= two && one >= three) {
+            max = one;
+        } else if (two >= one && two >= three) {
+            max = two;
+        } else {
+            max = three;
         }
+        System.out.println("Большее число из известных " + max);
+
     }
+}
