@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задание 1");
-        int age = 15;
+        int age = 12;
         System.out.println("Возраст человека " + age + " лет");
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " лет,то он совершеннолетний");
-        }
-        if (age < 18) {
+        } else {
             System.out.println("Если возраст человека равен " + age + " лет,то он не достиг совершеннолетия,нужно подождать");
         }
 
@@ -18,8 +17,7 @@ public class Main {
         System.out.println("Температура воздуха на улице " + airTemperature + " градусов");
         if (airTemperature <= 5) {
             System.out.println("На улице холодно,нужно надеть шапку");
-        }
-        if (airTemperature > 5) {
+        } else {
             System.out.println("Сегодня тепло,можно идти без шапки");
         }
 
@@ -62,39 +60,45 @@ public class Main {
         }
 
         System.out.println("Задание 6");
-        int occupiedPlaces = 101;
-        System.out.println("Занято мест " + occupiedPlaces);
         int allPlases = 102;
         System.out.println("Вагон расситан на " + allPlases + " мест");
         int sittingPlaces = 60;
         System.out.println("Сидячих мест в вагоне рассчитано на " + sittingPlaces + " человек");
         int standingPlaces = allPlases - sittingPlaces;
         System.out.println("Стоячих мест в вагоне рассчитано на " + standingPlaces + " человека");
-        if (occupiedPlaces <= 60) {
-            System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - occupiedPlaces) + " и " + standingPlaces + " свободных стоячих мест");
-        }
-        if (occupiedPlaces > 60 && occupiedPlaces < 102) {
-            System.out.println("В вагоне осталось свободных сидячих мест " + (sittingPlaces - 60) + " и " + (standingPlaces - (occupiedPlaces - 60) + " свободных стоячих мест"));
-        } else {
+        int occupiedSeats = 23;
+        System.out.println("Занятые сидячие места " + occupiedSeats);
+        int occupiedStanding = 23;
+        System.out.println("Занятые стоячие места " + occupiedStanding);
+        int occupiedPlaces = occupiedSeats + occupiedStanding;
+        System.out.println("Всего занято мест в вагоне " + occupiedPlaces);
+
+        if (occupiedPlaces < allPlases) {
+            if (occupiedSeats < sittingPlaces) {
+                System.out.println("В вагоне есть сидячие места");
+            } else if (occupiedStanding < standingPlaces) {
+                System.out.println("В вагоне есть стоячие места");
+            }
+        }else {
             System.out.println("Вагон полностью забит");
         }
 
-        System.out.println("Задание 7");
-        int one = 15;
-        System.out.println("Первое число " + one);
-        int two = 8;
-        System.out.println("Второе число " + two);
-        int three = 98;
-        System.out.println("Третье число " + three);
-        int max;
-        if (one >= two && one >= three) {
-            max = one;
-        } else if (two >= one && two >= three) {
-            max = two;
-        } else {
-            max = three;
-        }
-        System.out.println("Большее число из известных " + max);
+            System.out.println("Задание 7");
+            int one = 15;
+            System.out.println("Первое число " + one);
+            int two = 8;
+            System.out.println("Второе число " + two);
+            int three = 98;
+            System.out.println("Третье число " + three);
+            int max;
+            if (one >= two && one >= three) {
+                max = one;
+            } else if (two >= one && two >= three) {
+                max = two;
+            } else {
+                max = three;
+            }
+            System.out.println("Большее число из известных " + max);
 
+        }
     }
-}
